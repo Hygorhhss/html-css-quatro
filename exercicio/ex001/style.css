@@ -1,0 +1,5 @@
+iframe {
+    height: 400px;
+    border: 1px solid black; /*Borda do Iframe, recebe o valor de 0 or 1*/
+}
+
