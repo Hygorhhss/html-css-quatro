@@ -42,6 +42,25 @@ iframe#tela { /*toda a configuração do tamanho da imagem de fundo*/
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height:471px ;
+}
+
+section#redes-sociais { /*posicionamento dos botões*/
+    text-align: right;
+}
+
+section#redes-sociais img { /*Configuração dos botões*/
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    box-sizing: border-box; /*A borda faz parte da caixa, deixando o hover individual*/
+}
+
+section#redes-sociais > a > img:hover { /*poderia ser no link <a>*/
+    border: 2px solid rgba(255, 255, 255, 0.459);
+    transform: translate(-3px, -3px); /*"relevo" ao passar o mouse no icone*/
+    box-shadow: 5px 5px 10px black; /*aumentar a sombra ao movimentar*/
+    transition: transform 0.1s, border 0.1s; /*Tempo de transição ao passar o mouse + a borda*/
 }
