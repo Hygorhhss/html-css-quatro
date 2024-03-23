@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url('pacote-d013/pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center; /*Sem repetir imagem, mostrando a imagem a partir do topo no centro*/
+    background-size: cover; /*cobrir a tela toda*/
+    background-attachment: fixed; /*Já está fixo, foi só para garantir*/
+}
+
+main {
+    position: relative;
+    height: 100vh;;
+}
+
+section#telefone {
+    position: absolute; /*A imagem é absoluta ao posicionamento relativo da tag <main>*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px; /*Validar a largura da imagem (podnedo colocar uma cor de fundo para definir e optar no-repeat após a url)*/
+    background: url("pacote-d013/pacote-d013/imagens/frame-iphone.png") no-repeat; /*Colocar a imagem pela da url ao invés da tag <img> no CSS*/
+}
+
+section#redes-sociais {
+    
+}
