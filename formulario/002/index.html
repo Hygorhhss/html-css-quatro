@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Primeiro formulario</h1>
+
+    <form action="cadastro php" autocomplete="off"> <!--Retirar sugestão da caixa-->
+        
+        <p><label for="inome">Nome: </label> <!--Label for= etiqueta / Criar relação do nome para caixa, colocar o ID-->
+            <input type="text" name="nome" id="inome"></p> 
+
+        <p><label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>Enviar <input type="submit" value="Enviar"></p> 
+    </form>
+
+
+    <!--Podemos mandar as informações para o JAVA servidor, php-->
+    <!--action vai ser ativado ao clicar no "submit" quando houver o arquivo php para "guardar" as informações-->
+    <!--Todo input/objeto de entrada tenha um 'name' util para HTML e php, para o JS o 'id' é mais importante-->
+
+    <!--Após o envio tem as infomações depois da interrogação os parametros enviados = file:///C:/Users/HYGOR/Documents/Estudos/html-css-quatroa/formulario/002/cadastro%20php?nome=Hygor&sobrenome=Henrique-->
+</body>
+</html>
