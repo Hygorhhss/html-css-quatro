@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email e Telefone</title>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on">
+
+        <fieldset> <!--Agrupamento de campos-->
+            <legend>Dados pessoais</legend> <!--legenda para classificar campó-->
+            <p>
+                <label for="email">email</label>
+                <input type="email" name="" id="email" autocomplete="email" required> <!--Não é uma validação completa, é apenas um campo direcionado a e-mail-->
+            </p>
+    
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="" id="telefone" autocomplete="tel" required pattern="^\(\d{2}\)\d{5}-\d{4}$"><!--Verificar expressões regulares / RegEx-->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

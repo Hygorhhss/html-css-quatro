@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="mas">
+            <label for="mas">Masculino</label>
+
+            <input type="radio" name="sexo" id="fem" checked>
+            <label for="fem">Feminino</label>
+
+            <!--input:radio (Escolher uma opção) - Tendo que ter o mesmo 'name' para escolha / id diferente para que o label funcione-->
+            <!--checked - uma opção já fica marcada-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="futebol" id="futebol"> <!--Caixa com opção de marcar 'checkbox', continuar fazer ligação com o Label-->
+            <label for="futebol">Futebol</label>
+
+            <input type="checkbox" name="natacao" id="natacao">
+            <label for="natacao">Natação</label>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpra">
+        </p>
+    </form>
+</body>
+</html>
