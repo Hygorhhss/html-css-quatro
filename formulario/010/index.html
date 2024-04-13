@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="" method="get" autocomplete="on">
+        <label for="iest">Estado</label>  <!--Elemento-->
+        <select name="estado" id="">
+
+            <option value=""selected>--- Escolha ---</option>
+            
+            <optgroup label="Região Sudeste"> <!--Atributo-->
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste"> 
+                <option value="MA">São Paulo</option>
+                <option value="PE">Rio de Janeiro</option>
+                <option value="RN">Minas Gerais</option>
+            </optgroup>
+        </select>
+        <!--<select> fecha tag, dentro coloca option para selecionar-->
+        <!--optgroup - Grupo de opções, possível inserir um label de atributo-->
+
+        <!--Selected - Já deixa um estado selecionado-->
+
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+            </datalist>
+        </p>
+        <!--Inserir uma opção que não tem na lista-->
+        <!--Criar uma <datalist> - coloca um ID - inseri as opções dentro e conecta no input com o atributo list=""-->
+        <!--Possível tirar o data value se necessário-->
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="5" maxlength="300"></textarea>
+        </p>
+        <!--As informações posso colocar algumas limitações como colunas, linhas e quantidade de caracteres-->
+        <!--Importante colocar como method "post" para não limitar os 3000bits do method get que impossibilitar enviar-->
+    </form>
+</body>
+</html>
