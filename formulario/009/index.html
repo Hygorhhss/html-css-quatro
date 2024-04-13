@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="cor" value="#00ff00"> 
+        <!--type: color - Usuario seleciona as cores-->
+        <!--Value - possivel deixar uma cor definida-->
+    </p>
+
+    <p>
+        <label for="inivel">Nível de satisfação:</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="4">
+    </p>
+    <!--range = Bolinha que é possível mexer nível por padrão 0-100-->
+    <!--Deixar o range com min> e <max>-->
+    <!--Value - já define uma cor para começar-->
+    <!--Testar em diferentes navegadores-->
+
+    <p>
+        <label for="ifoto">Foto do perfil</label>
+        <input type="file" name="foto" id="foto">
+    </p>
+    <!--input: img - Não deixa o visitante escolher a foto, necessita de JS ou PHP-->
+    <!--Input file - O usuario escolhe a foto-->
+    <!--Quando usar <file> não pode usar o method: get e sim method: post para guardar no cabeçalho do inspecionar (Network > Console)-->
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
