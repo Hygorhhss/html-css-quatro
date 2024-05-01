@@ -28,11 +28,11 @@ desktop: 1024px
     }
 
     /*body {
-        background-image: ; FOLHA NÃO IMPRIMIR O EFEITO
+        /*background-image: ; FOLHA NÃO IMPRIMIR O EFEITO*/
     }*/
 
     main {
-        width: 90%; /*90% do papel*/
+        width: 90%;
         border: 2px solid black;
     }
 
@@ -51,6 +51,7 @@ desktop: 1024px
     img#print {display: block;}
     img#pc {display: none;}
     img#tv {display: none;} 
+    {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
